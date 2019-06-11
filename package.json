@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "node app.js",
+        "start": "nodemon app.js",
         "deploy": "gcloud functions deploy chrome --runtime nodejs8 --trigger-http --memory 512MB",
         "teardown": "gcloud functions delete chrome"
     },
@@ -8,5 +8,8 @@
         "archiver": "^3.0.0",
         "express": "^4.17.1",
         "puppeteer": "^1.17.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.1"
     }
 }
