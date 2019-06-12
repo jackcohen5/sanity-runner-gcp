@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "start": "nodemon app.js",
-        "deploy": "gcloud functions deploy chrome --runtime nodejs8 --trigger-http --memory 512MB",
+        "start": "nodemon src/app.js",
+        "deploy": "gcloud functions deploy chrome --runtime nodejs8 --trigger-http --memory 512MB --entry-point=src",
         "teardown": "gcloud functions delete chrome"
     },
     "dependencies": {
