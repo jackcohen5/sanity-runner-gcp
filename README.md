@@ -2,14 +2,16 @@
 
 ## Why?
 
-You want to run serverless automated sanities on your application, but some of your tests require two sessions running at once. That's why we have incognito mode, right?! But wait, AWS Lambda doesn't support multiple processes and the `--single-process` flag isn't officially supported in Chromium, meaning we can't use Puppeteer's `createIncognitoBrowserContext` on Lambda. Well never fear, that's why we're gonna run it on GCP instead.
+You want to run serverless automated sanities on your application, but some of your tests require two sessions running at once. That's why we have incognito mode, right?!
+
+But wait, AWS Lambda doesn't support multiple processes and the `--single-process` flag isn't officially supported in Chromium, meaning we can't use Puppeteer's `createIncognitoBrowserContext` on Lambda. Well never fear, that's why we're gonna run it on GCP instead.
 
 ## Installation
 
 You can optionally use [nvm](https://github.com/nvm-sh/nvm) and [yvm](https://github.com/tophat/yvm) to manage your runtime environment.
 
-`nvm use`
-`yvm use`
+- `nvm use`
+- `yvm use`
 
 Then you can run `yarn` (or `npm install`) to install.
 
